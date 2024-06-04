@@ -38,7 +38,7 @@ namespace LinqExercise
 
             //TODO: Print to the console only the numbers greater than 6
             Console.WriteLine("#s in numbers array greater than 6");
-            Console.WriteLine(numbers.Where(x => x > 6));
+            numbers.Where(x => x > 6).ToList().ForEach(x => Console.WriteLine(x));
 
             //TODO: Order numbers in any order (ascending or desc) but only print 4 of them **foreach loop only!**
             numbers.Take(4).OrderBy(x => x).ToList().ForEach(x => Console.WriteLine(x));
